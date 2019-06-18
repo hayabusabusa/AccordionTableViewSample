@@ -47,9 +47,8 @@ class AdvanceViewController: UIViewController {
 extension AdvanceViewController {
     
     func setupUI() {
-        // TableView
         // Navigation
-        navigationItem.title = "Simple"
+        navigationItem.title = "Advance"
         
         // TableView
         tableView.delegate = self
