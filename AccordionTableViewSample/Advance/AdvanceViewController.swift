@@ -1,14 +1,14 @@
 //
-//  SimpleViewController.swift
+//  AdvanceViewController.swift
 //  AccordionTableViewSample
 //
-//  Created by Yamada Shunya on 2019/06/17.
+//  Created by Yamada Shunya on 2019/06/18.
 //  Copyright © 2019 Yamada Shunya. All rights reserved.
 //
 
 import UIKit
 
-class SimpleViewController: UIViewController {
+class AdvanceViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,11 +22,20 @@ class SimpleViewController: UIViewController {
         Item(title: "タイトル", desc: "説明", isOpen: false),
         Item(title: "タイトル", desc: "You can regulate the height by either implementing the (a)heightForRowAtIndexPath with logic setting the heights or (b)with auto layout and automatic tableview row height", isOpen: false),
         Item(title: "[WindowServer]\ndisplay_timer_callback:\n unexpected state \n(now:19a601f4a779\n < expected:19a602e901d0)", desc: "You can regulate the height by either implementing the (a)heightForRowAtIndexPath with logic setting the heights or (b)with auto layout and automatic tableview row height\nYou can regulate the height by either implementing the (a)heightForRowAtIndexPath with logic setting the heights or (b)with auto layout and automatic tableview row height", isOpen: false),
-        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: true),
+        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
         Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
         Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
         Item(title: "タイトル", desc: "[WindowServer]\ndisplay_timer_callback:\n unexpected state \n(now:19a601f4a779\n < expected:19a602e901d0)", isOpen: false),
-        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false)
+        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
+        Item(title: "タイトル", desc: "説明", isOpen: false),
+        Item(title: "タイトル", desc: "[WindowServer]\ndisplay_timer_callback:\n unexpected state \n(now:19a601f4a779\n < expected:19a602e901d0)", isOpen: false),
+        Item(title: "タイトル", desc: "You can regulate the height by either implementing the (a)heightForRowAtIndexPath with logic setting the heights or (b)with auto layout and automatic tableview row height", isOpen: false),
+        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
+        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
+        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
+        Item(title: "タイトル", desc: "[WindowServer]\ndisplay_timer_callback:\n unexpected state \n(now:19a601f4a779\n < expected:19a602e901d0)", isOpen: false),
+        Item(title: "タイトル", desc: "workIntervalStart: startTimestamp > targetTimestamp; rolling forward by 0.316667", isOpen: false),
+        Item(title: "タイトル", desc: "説明", isOpen: false)
     ]
     
     override func viewDidLoad() {
@@ -35,9 +44,10 @@ class SimpleViewController: UIViewController {
     }
 }
 
-extension SimpleViewController {
+extension AdvanceViewController {
     
     func setupUI() {
+        // TableView
         // Navigation
         navigationItem.title = "Simple"
         
@@ -46,39 +56,39 @@ extension SimpleViewController {
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.register(UINib(nibName: "SimpleAccordionTableViewCell", bundle: nil), forCellReuseIdentifier: "SimpleAccordionTableViewCell")
+        tableView.register(UINib(nibName: "AdvanceAccordionTableViewCell", bundle: nil), forCellReuseIdentifier: "AdvanceAccordionTableViewCell")
     }
 }
 
-extension SimpleViewController: UITableViewDataSource, UITableViewDelegate {
+extension AdvanceViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SimpleAccordionTableViewCell", for: indexPath) as! SimpleAccordionTableViewCell
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AdvanceAccordionTableViewCell", for: indexPath) as! AdvanceAccordionTableViewCell
+        
         // Cell のセットアップ
         let item = items[indexPath.row]
         cell.setupCell(pText: item.title, cText: item.desc, isOpen: item.isOpen)
-
+        
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-
+        
         // 開閉状態を切り替え
         items[indexPath.row].isOpen.toggle()
-
+        
         // セルの高さが変わるため tableView.beginUpdates() ~ endUpdates()
-        if let cell = tableView.cellForRow(at: indexPath) as? SimpleAccordionTableViewCell {
+        if let cell = tableView.cellForRow(at: indexPath) as? AdvanceAccordionTableViewCell {
             tableView.beginUpdates()
-
+            
             // タップしたセルを開ける
             cell.updateCell(isOpen: items[indexPath.row].isOpen)
-
+            
             tableView.endUpdates()
         }
     }

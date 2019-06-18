@@ -14,12 +14,14 @@
 		A41288D222B7723100DA4292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41288D022B7723100DA4292 /* LaunchScreen.storyboard */; };
 		A41288DD22B7723100DA4292 /* AccordionTableViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41288DC22B7723100DA4292 /* AccordionTableViewSampleTests.swift */; };
 		A41288E822B7723100DA4292 /* AccordionTableViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41288E722B7723100DA4292 /* AccordionTableViewSampleUITests.swift */; };
-		A41288F822B7729F00DA4292 /* AccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41288F622B7729F00DA4292 /* AccordionTableViewCell.swift */; };
-		A41288F922B7729F00DA4292 /* AccordionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41288F722B7729F00DA4292 /* AccordionTableViewCell.xib */; };
 		A41288FD22B7777400DA4292 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41288FC22B7777400DA4292 /* SimpleViewController.swift */; };
 		A41288FF22B7779000DA4292 /* SimpleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41288FE22B7779000DA4292 /* SimpleViewController.storyboard */; };
 		A412890222B778F300DA4292 /* SimpleAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412890022B778F300DA4292 /* SimpleAccordionTableViewCell.swift */; };
 		A412890322B778F300DA4292 /* SimpleAccordionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A412890122B778F300DA4292 /* SimpleAccordionTableViewCell.xib */; };
+		A414685C22B867A7003E113D /* AdvanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414685B22B867A7003E113D /* AdvanceViewController.swift */; };
+		A414685E22B867AF003E113D /* AdvanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A414685D22B867AF003E113D /* AdvanceViewController.storyboard */; };
+		A414686122B86801003E113D /* AdvanceAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414685F22B86801003E113D /* AdvanceAccordionTableViewCell.swift */; };
+		A414686222B86801003E113D /* AdvanceAccordionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A414686022B86801003E113D /* AdvanceAccordionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +55,14 @@
 		A41288E322B7723100DA4292 /* AccordionTableViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccordionTableViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41288E722B7723100DA4292 /* AccordionTableViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionTableViewSampleUITests.swift; sourceTree = "<group>"; };
 		A41288E922B7723100DA4292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A41288F622B7729F00DA4292 /* AccordionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionTableViewCell.swift; sourceTree = "<group>"; };
-		A41288F722B7729F00DA4292 /* AccordionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccordionTableViewCell.xib; sourceTree = "<group>"; };
 		A41288FC22B7777400DA4292 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		A41288FE22B7779000DA4292 /* SimpleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleViewController.storyboard; sourceTree = "<group>"; };
 		A412890022B778F300DA4292 /* SimpleAccordionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAccordionTableViewCell.swift; sourceTree = "<group>"; };
 		A412890122B778F300DA4292 /* SimpleAccordionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleAccordionTableViewCell.xib; sourceTree = "<group>"; };
+		A414685B22B867A7003E113D /* AdvanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceViewController.swift; sourceTree = "<group>"; };
+		A414685D22B867AF003E113D /* AdvanceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdvanceViewController.storyboard; sourceTree = "<group>"; };
+		A414685F22B86801003E113D /* AdvanceAccordionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceAccordionTableViewCell.swift; sourceTree = "<group>"; };
+		A414686022B86801003E113D /* AdvanceAccordionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvanceAccordionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +118,6 @@
 				A41288CB22B7722D00DA4292 /* Main.storyboard */,
 				A41288FA22B7774C00DA4292 /* Simple */,
 				A41288FB22B7775600DA4292 /* Advance */,
-				A41288F522B7725500DA4292 /* Cell */,
 				A41288CE22B7723100DA4292 /* Assets.xcassets */,
 				A41288D022B7723100DA4292 /* LaunchScreen.storyboard */,
 				A41288D322B7723100DA4292 /* Info.plist */,
@@ -140,15 +143,6 @@
 			path = AccordionTableViewSampleUITests;
 			sourceTree = "<group>";
 		};
-		A41288F522B7725500DA4292 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				A41288F622B7729F00DA4292 /* AccordionTableViewCell.swift */,
-				A41288F722B7729F00DA4292 /* AccordionTableViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		A41288FA22B7774C00DA4292 /* Simple */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +157,10 @@
 		A41288FB22B7775600DA4292 /* Advance */ = {
 			isa = PBXGroup;
 			children = (
+				A414685B22B867A7003E113D /* AdvanceViewController.swift */,
+				A414685D22B867AF003E113D /* AdvanceViewController.storyboard */,
+				A414685F22B86801003E113D /* AdvanceAccordionTableViewCell.swift */,
+				A414686022B86801003E113D /* AdvanceAccordionTableViewCell.xib */,
 			);
 			path = Advance;
 			sourceTree = "<group>";
@@ -272,11 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A412890322B778F300DA4292 /* SimpleAccordionTableViewCell.xib in Resources */,
-				A41288F922B7729F00DA4292 /* AccordionTableViewCell.xib in Resources */,
 				A41288D222B7723100DA4292 /* LaunchScreen.storyboard in Resources */,
+				A414686222B86801003E113D /* AdvanceAccordionTableViewCell.xib in Resources */,
 				A41288CF22B7723100DA4292 /* Assets.xcassets in Resources */,
 				A41288FF22B7779000DA4292 /* SimpleViewController.storyboard in Resources */,
 				A41288CD22B7722D00DA4292 /* Main.storyboard in Resources */,
+				A414685E22B867AF003E113D /* AdvanceViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41288CA22B7722D00DA4292 /* ViewController.swift in Sources */,
-				A41288F822B7729F00DA4292 /* AccordionTableViewCell.swift in Sources */,
+				A414685C22B867A7003E113D /* AdvanceViewController.swift in Sources */,
 				A412890222B778F300DA4292 /* SimpleAccordionTableViewCell.swift in Sources */,
+				A414686122B86801003E113D /* AdvanceAccordionTableViewCell.swift in Sources */,
 				A41288FD22B7777400DA4292 /* SimpleViewController.swift in Sources */,
 				A41288C822B7722D00DA4292 /* AppDelegate.swift in Sources */,
 			);
